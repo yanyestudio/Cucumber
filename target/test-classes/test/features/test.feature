@@ -1,5 +1,5 @@
 Feature :Test AlertTest Alert
-  description  alert
+  verifies the  alert functionality
 
 Scenario: Test Alert scenario 2
 Given User is on demo page

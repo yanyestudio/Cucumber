@@ -1,22 +1,28 @@
-package seleniumgluecode;
+package test.seleniumgluecode;
 
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import test.Pages.Behaviour;
 
 public class Test {
+    Behaviour page_behaviour = new Behaviour();
 
-    @Given("User is on demo page")
-    public void Use_is_on_demo_page() throws Throwable{
-    //throw new PendingException();
+    @Given("^User is on demo page$")
+    public void Use_is_on_demo_page() throws Throwable {
+        page_behaviour.click_on_Alerts_and_Modals();
+        throw new PendingException();
     }
-    @When("click on Alerts and Modals")
-    public void click_on_Alerts_and_Modals() throws Throwable{
-        //throw new PendingException();
-    }
-        @Then("Validate the message")
+    @When("^click on Alerts and Modals$")
+    public void click_on_Alerts_and_Modals() throws Throwable {
+            page_behaviour.click_on_Alerts_and_Modals();
+            throw new PendingException();
+        }
+    @Then("^Validate the message$")
     public void Validate_the_message() throws Throwable{
-        //throw new PendingException();
+                page_behaviour.click_on_Alerts_and_Modals();
+                throw new PendingException();
     }
 }
