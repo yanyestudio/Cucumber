@@ -7,12 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="scr/java/test/features/"
-        ,glue={"test.seleniumgluecode"}
+        features="src/test/features"
+        ,glue={"seleniumgluecode"}
         ,format = {"pretty","json:json_output/cucumber.json","junit:junit/cucumber.xml"}
         ,monochrome = true
         ,strict = true
-        ,dryRun=false
         )
 public class Testrunner{
 }
