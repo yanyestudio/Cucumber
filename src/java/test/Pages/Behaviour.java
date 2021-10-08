@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import test.utilPom.Page_Base;
 
 public class Behaviour extends Page_Base{
+    static By registerTitMenu= By.name("Menu List");
+    static By registerMenu = By.xpath("//*[@id=\"easycont\"]/div/div[1]/div/div[1]");
     static By registerBotonaceptar =        By.xpath("//*[@id=\"at-cv-lightbox-button-holder\"]/a[1]");
     static By registerBotonClickme =        By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/button");
-
-
     static By registerLinkAlertModal =      By.xpath("//*[@id='treemenu']/li/ul/li[5]/a") ;       //By.linkText("Alerts & Modals");
     static By registerNameRAlertModal =     By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/button") ;    //  By.linkText("registerLinkAlertModal");
 
